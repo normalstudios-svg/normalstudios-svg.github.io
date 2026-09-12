@@ -288,6 +288,29 @@
     .onde-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+  /* tour 360 */
+  .tour{background:var(--verde-escuro);color:#EAF0EC}
+  .tour .inner{padding-top:44px;padding-bottom:38px}
+  .tour .rot{color:#9DBFB2}
+  .tour h2{color:#fff;margin-bottom:8px}
+  .tour p.lead{color:#C7D8D0;font-size:15px;max-width:56ch;margin-bottom:18px}
+  .tour-card{display:block;text-decoration:none;border-radius:4px;overflow:hidden;position:relative;background:#0F1D18;box-shadow:var(--sombra)}
+  .tour-card img{width:100%;height:auto;display:block;aspect-ratio:4/3;object-fit:cover;object-position:60% 50%}
+  .tour-veu{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,29,24,.04) 0%,rgba(15,29,24,.10) 42%,rgba(15,29,24,.62) 76%,rgba(15,29,24,.92) 100%)}
+  .tour-play{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);width:66px;height:66px;border-radius:50%;
+    background:rgba(255,255,255,.94);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+  .tour-play::after{content:"";border-left:19px solid var(--verde-escuro);border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+  .tour-legenda{position:absolute;left:0;right:0;bottom:0;padding:16px 18px 18px;color:#fff;font-size:13.5px;line-height:1.45}
+  .tour-legenda b{display:block;font-size:15px;margin-bottom:1px}
+  .tour-acoes{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}
+  .tour .btn{background:#fff;color:var(--verde-escuro)}
+  .tour .nota{color:#9DBFB2;margin-top:12px}
+  @media (min-width:760px){
+    .tour-play{width:78px;height:78px;top:46%}
+    .tour-card img{aspect-ratio:1440/537;object-position:50% 50%}
+  }
+
 </style>
 
 <div class="topbar">
@@ -324,6 +347,28 @@
     <div class="cred"><b>Sem HMP</b><span>unidade livre, sem limite de renda</span></div>
   </div>
 </div>
+
+<section class="tour">
+  <div class="inner">
+    <p class="rot">Tour 360&deg; oficial</p>
+    <h2>Entre no apartamento agora, sem sair daqui.</h2>
+    <p class="lead">A One publicou o tour em 360&deg; da planta de um dormit&oacute;rio. D&aacute; pra andar pela sala, pela cozinha e sair no terra&ccedil;o, girando a imagem com o dedo. Leva dois minutos e responde mais que qualquer foto.</p>
+
+    <a class="tour-card" href="https://oneinnovation.com.br/tour-virtual/tour_one_nex_jurupis_02/1dor/" target="_blank" rel="noopener">
+      <img src="1707-tour.jpg" width="1440" height="537" loading="lazy" alt="Interior do studio decorado no tour virtual do Nex One Jurupis, com cozinha integrada, sala e terra&ccedil;o ao fundo">
+      <span class="tour-veu"></span>
+      <span class="tour-play"></span>
+      <span class="tour-legenda"><b>Abrir o tour 360&deg;</b>Sala, cozinha, banho e terra&ccedil;o. Material oficial da One Innovation.</span>
+    </a>
+
+    <div class="tour-acoes">
+      <a class="btn btn-lg" href="https://oneinnovation.com.br/tour-virtual/tour_one_nex_jurupis_02/1dor/" target="_blank" rel="noopener">Abrir o tour em 360&deg;</a>
+      <a class="btn" href="https://wa.me/5511927682992?text=Ol%C3%A1!%20Vi%20o%20tour%20do%20studio%201707%20e%20queria%20saber%20a%20condi%C3%A7%C3%A3o%20do%20repasse.">Tirar d&uacute;vida no WhatsApp</a>
+    </div>
+
+    <p class="nota">O tour mostra a planta de um dormit&oacute;rio do empreendimento, decorada e mobiliada para exposi&ccedil;&atilde;o. A 1707 &eacute; a planta final 07, studio de 25,71 m&sup2; com terra&ccedil;o coberto, no 17&ordm; e &uacute;ltimo pavimento. Serve para voc&ecirc; sentir o p&eacute; direito, os acabamentos e a propor&ccedil;&atilde;o dos ambientes.</p>
+  </div>
+</section>
 
 <section class="espelho">
   <div class="inner">
