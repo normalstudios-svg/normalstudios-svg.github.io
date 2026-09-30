@@ -22,7 +22,6 @@
 <meta name="twitter:title" content="Nex One Jurupis: studio 25m² no 17º e último andar, Moema">
 <meta name="twitter:description" content="Repasse por R$ 499.000, a 400 m do metrô Eucaliptos, com a taxa de cessão por conta do vendedor.">
 <meta name="twitter:image" content="https://technopoli.com.br/og-1707.jpg">
-<link rel="preload" as="image" href="https://technopoli.com.br/1707-fachada.jpg" fetchpriority="high">
 <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140"><rect width="140" height="140" fill="%23F4F1EC"/><g fill="none" stroke="%2314161A" stroke-width="8" stroke-linecap="round"><path d="M30 34 H74"/><path d="M52 34 V106"/><circle cx="74" cy="56" r="22"/></g><circle cx="110.65" cy="31.40" r="9" fill="%23C8553D"/></svg>'>
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="geo.placename" content="Moema, Sao Paulo">
@@ -246,18 +245,6 @@
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
-  .falta{
-    background:var(--alerta);
-    color:var(--alerta-tinta);
-    font-family:var(--mono);
-    font-size:.82em;
-    padding:1px 6px;
-    border-radius:2px;
-    font-weight:500;
-    white-space:normal;
-    overflow-wrap:anywhere;
-  }
-  .num{font-family:var(--mono);font-variant-numeric:tabular-nums}
 
   /* 1. barra fixa */
   .topbar{
@@ -318,28 +305,7 @@
   .conforto{font-size:13.5px;color:var(--tinta-fraca);margin:12px 0 0}
 
   /* 2. hero */
-  .hero{background:var(--superficie);padding-top:36px;border-bottom:1px solid var(--linha)}
-  .foto-placeholder{
-    margin-top:26px;
-    aspect-ratio:4/3;
-    max-width:100%;
-    border:3px dashed #C0392B;
-    background:repeating-linear-gradient(45deg,#F8D7D3,#F8D7D3 14px,#F2BDB7 14px,#F2BDB7 28px);
-    display:flex;align-items:center;justify-content:center;
-    text-align:center;
-    color:#8E2A1F;
-    font-family:var(--mono);
-    font-size:13px;
-    font-weight:500;
-    padding:18px;
-    border-radius:3px;
-  }
 
-  /* 3. credibilidade */
-  .creds{background:var(--verde-escuro);color:#F1F6F3;padding:26px 16px}
-  .creds .inner{display:grid;grid-template-columns:1fr 1fr;gap:20px 18px}
-  .cred b{display:block;font-family:var(--mono);font-size:21px;font-weight:500;letter-spacing:-.01em}
-  .cred span{display:block;font-size:12.5px;opacity:.82;line-height:1.35;margin-top:3px}
 
   /* 4. espelho */
   .espelho ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
@@ -360,7 +326,7 @@
     width:30px;height:30px;border-radius:50%;
     background:var(--verde);color:#fff;
     display:flex;align-items:center;justify-content:center;
-    font-family:var(--mono);font-size:14px;font-weight:500;
+    font-size:14px;font-weight:600;
     margin-top:2px;
   }
   @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .passo .n{color:#0E1714}}
@@ -374,9 +340,9 @@
   .linha-conta .rot{font-size:14.5px;min-width:0;flex:1 1 auto}
   .linha-conta .val{min-width:0;flex:0 1 auto}
   .linha-conta .rot small{display:block;color:var(--tinta-fraca);font-size:12.5px;line-height:1.35}
-  .linha-conta .val{font-family:var(--mono);font-size:15.5px;font-weight:500;text-align:right}
+  .linha-conta .val{font-size:15.5px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
   .linha-conta.destaque{background:var(--verde-lavado)}
-  .linha-conta.destaque .val{font-size:19px;color:var(--verde)}
+  .linha-conta.destaque .val{font-family:var(--serif);font-weight:normal;font-size:24px;color:var(--verde)}
   .nota{font-size:13px;color:var(--tinta-fraca);margin:14px 0 0;max-width:64ch}
 
   /* 7. prova */
@@ -384,7 +350,7 @@
   .prova-item{background:var(--superficie);border:1px solid var(--linha);border-radius:3px;padding:14px 16px}
   .prova-item b{display:block;font-size:14.5px;margin-bottom:2px}
   .prova-item span{font-size:14px;color:var(--tinta-media)}
-  .prova-item em{font-style:normal;font-family:var(--mono);font-size:13.5px;color:var(--latao);display:block;margin-top:5px}
+  .prova-item em{font-style:normal;font-size:12.5px;color:var(--latao);display:block;margin-top:6px}
 
   /* 8. quem atende */
   .quem{background:var(--superficie);border:1px solid var(--linha);border-radius:3px;padding:20px}
@@ -395,7 +361,7 @@
   details{background:var(--superficie);border:1px solid var(--linha);border-radius:3px;margin-bottom:8px}
   summary{cursor:pointer;padding:14px 16px;font-weight:600;font-size:15px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
   summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";font-family:var(--mono);color:var(--verde);font-size:19px;line-height:1}
+  summary::after{content:"+";color:var(--verde);font-size:19px;line-height:1}
   details[open] summary::after{content:"–"}
   details .corpo{padding:0 16px 16px;font-size:14.5px;color:var(--tinta-media)}
   details .corpo p{margin:0 0 10px}
@@ -405,7 +371,7 @@
   .onde-lista{display:flex;flex-direction:column;gap:0;margin:0 0 18px;padding:0;list-style:none;border:1px solid var(--linha);border-radius:3px;background:var(--superficie)}
   .onde-lista li{display:flex;justify-content:space-between;gap:14px;padding:11px 16px;border-bottom:1px solid var(--linha);font-size:14.5px}
   .onde-lista li:last-child{border-bottom:0}
-  .onde-lista li b{font-family:var(--mono);font-weight:500;white-space:nowrap}
+  .onde-lista li b{font-weight:600;white-space:nowrap}
   .link-mapa{display:inline-block;color:var(--verde);font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--verde);font-size:15px}
 
   /* 11. final */
@@ -431,14 +397,35 @@
   :root[data-theme="dark"] .flutuante{color:#0E1714}
 
 
-  /* fotos */
-  .hero-foto{width:100%;height:auto;display:block;border-radius:3px;border:1px solid var(--linha)}
-  .legenda{font-size:12px;color:var(--tinta-fraca);margin:8px 0 0;line-height:1.45}
-  .galeria-real{columns:2 260px;column-gap:14px}
-  .galeria-real figure{break-inside:avoid;margin:0 0 14px;background:var(--superficie);border:1px solid var(--linha);border-radius:3px;overflow:hidden}
-  .galeria-real img{width:100%;height:auto;display:block}
-  .galeria-real figcaption{padding:11px 14px;font-size:13.5px;color:var(--tinta-media)}
-  .galeria-real figcaption b{display:block;color:var(--tinta);font-size:14.5px;margin-bottom:1px}
+  /* topo */
+  .hero{padding-top:16px;padding-bottom:28px}
+  .hero-grid{display:flex;flex-direction:column;gap:18px}
+  .hero-media{order:-1}
+  .hero-foto{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block;border-radius:3px}
+  .legenda{font-size:12px;color:var(--tinta-fraca);margin:6px 0 0;line-height:1.45}
+  .endereco{font-size:13.5px;color:var(--tinta-media);margin:0 0 6px}
+  .hero h1{font-size:clamp(25px,6.4vw,40px);margin-bottom:14px}
+  .preco{margin:0 0 16px}
+  .preco b{display:block;font-family:var(--serif);font-weight:normal;font-size:clamp(44px,12vw,62px);line-height:1;letter-spacing:-.02em;color:var(--tinta);white-space:nowrap}
+  .preco span{display:block;font-size:14px;color:var(--tinta-media);margin-top:8px;max-width:44ch}
+  .fatos{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0 0 18px;padding:0;list-style:none;border-top:1px solid var(--linha)}
+  .fatos li{padding:8px 0;border-bottom:1px solid var(--linha);font-size:13.5px;color:var(--tinta-media);line-height:1.3}
+  .fatos li:nth-child(odd){padding-right:12px}
+  .fatos b{display:block;color:var(--tinta);font-size:15px}
+  .fatos a{color:inherit}
+  .hero .conforto{margin-top:10px}
+
+  /* fotos reais */
+  .fotos{background:var(--superficie);border-bottom:1px solid var(--linha)}
+  .fotos .lead{color:var(--tinta-media);margin:-8px 0 20px}
+  .fotos-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .fotos-grid figure{margin:0;min-width:0}
+  .fotos-grid .largo{grid-column:span 2}
+  .fotos-grid a{display:block;border-radius:3px;overflow:hidden}
+  .fotos-grid a:focus-visible{outline:3px solid var(--latao);outline-offset:2px}
+  .fotos-grid img{width:100%;height:auto;display:block}
+  .fotos-grid figcaption{font-size:13px;color:var(--tinta-media);padding:7px 0 0;line-height:1.4}
+  .fotos-grid figcaption b{color:var(--tinta)}
   .galeria{display:grid;grid-template-columns:1fr;gap:14px}
   .galeria figure{margin:0;background:var(--superficie);border:1px solid var(--linha);border-radius:3px;overflow:hidden}
   .galeria img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
@@ -447,10 +434,11 @@
   @media (min-width:760px){.galeria{grid-template-columns:1fr 1fr}}
   @media (min-width:760px){
     section{padding:60px 24px}
-    .creds .inner{grid-template-columns:repeat(4,1fr)}
     .btn-lg{width:auto;display:inline-block}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
-    .foto-placeholder{margin-top:0}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center}
+    .hero-media{order:1}
+    .hero-foto{aspect-ratio:4/3}
+    .fotos-grid{grid-template-columns:repeat(4,1fr);gap:16px}
     .onde-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -458,7 +446,7 @@
   /* tour 360 */
   .tour{background:var(--verde-escuro);color:#EAF0EC}
   .tour .inner{padding-top:44px;padding-bottom:38px}
-  .tour .rot{color:#9DBFB2}
+  .tour .rot{color:#9DBFB2;margin:0 0 6px;font-size:14px}
   .tour h2{color:#fff;margin-bottom:8px}
   .tour p.lead{color:#C7D8D0;font-size:15px;max-width:56ch;margin-bottom:18px}
   .tour-card{display:block;text-decoration:none;border-radius:4px;overflow:hidden;position:relative;background:#0F1D18;box-shadow:var(--sombra)}
@@ -490,51 +478,43 @@
 <section class="hero">
   <div class="inner">
     <div class="hero-grid">
-      <div>
-        <p class="contexto">Moema &middot; Al. Jurupis 1817 &middot; 400 m do metrô Eucaliptos</p>
-        <h1>O último andar da Torre Jurupis, a quatro minutos a pé do metrô Eucaliptos.</h1>
-        <p class="sub">É um repasse de contrato da unidade 1707, studio de 25,71 m² no 17º andar, o último pavimento da Torre Jurupis. O prédio está pronto, a entrega das chaves está em andamento e a unidade já foi vistoriada, com piso laminado instalado. A unidade é da categoria HMP do empreendimento, e eu explico abaixo, com o contrato na mão, o que isso significa para quem compra.</p>
-        <a class="btn btn-lg" href="https://wa.me/5511927682992?text=Ol%C3%A1!%20Quero%20saber%20a%20condi%C3%A7%C3%A3o%20do%20repasse%20do%20studio%201707%20no%20Nex%20One%20Jurupis.">Quero ver a condição completa</a>
-        <p class="conforto">Respondo no WhatsApp em até 15 minutos, das 8h às 22h. Mando o contrato e o extrato do saldo pra você conferir antes de visitar.</p>
+      <div class="hero-media">
+        <img class="hero-foto" src="1707-real-sala-800.jpg" srcset="1707-real-sala-800.jpg 800w, 1707-real-sala.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="1200" fetchpriority="high" decoding="async" alt="Sala do studio 1707 vazia, com piso laminado e porta para o terraço, foto real da vistoria">
+        <p class="legenda">Foto real da 1707, vistoria de 23/09/2026.</p>
       </div>
       <div>
-        <img class="hero-foto" src="1707-real-sala.jpg" width="1600" height="1200" fetchpriority="high" decoding="async" alt="Sala do studio 1707 vazia, com piso laminado e porta para o terraço, foto real da vistoria">
-        <p class="legenda">Foto real da 1707, tirada na vistoria de 23/09/2026. Piso laminado já instalado.</p>
+        <p class="endereco">Nex One Jurupis, Alameda dos Jurupis 1817, Moema</p>
+        <h1>Studio no último andar da Torre Jurupis, a 400&nbsp;m do metrô Eucaliptos.</h1>
+        <p class="preco"><b>R$ 499.000</b><span>Custo total do repasse. A taxa de cessão de 3% é paga pelo vendedor.</span></p>
+        <ul class="fatos">
+          <li><b>25,71 m²</b>studio, sem vaga</li>
+          <li><b>17º andar</b>o último da torre</li>
+          <li><b>R$ 600</b>de condomínio</li>
+          <li><b>Unidade HMP</b><a href="#hmp">o que isso significa</a></li>
+        </ul>
+        <a class="btn btn-lg" href="https://wa.me/5511927682992?text=Ol%C3%A1!%20Quero%20saber%20a%20condi%C3%A7%C3%A3o%20do%20repasse%20do%20studio%201707%20no%20Nex%20One%20Jurupis.">Chamar no WhatsApp</a>
+        <p class="conforto">Mando o contrato e o extrato do saldo antes da visita. Atendo das 8h às 22h.</p>
       </div>
     </div>
   </div>
 </section>
 
-<div class="creds">
+<section class="fotos">
   <div class="inner">
-    <div class="cred"><b>25,71 m²</b><span>studio, Torre Jurupis, 17º andar</span></div>
-    <div class="cred"><b>R$ 600</b><span>de condomínio, com lazer completo</span></div>
-    <div class="cred"><b>400 m</b><span>até a Estação Eucaliptos, linha 5</span></div>
-    <div class="cred"><b>17º andar</b><span>último pavimento da torre</span></div>
-  </div>
-</div>
-
-<section class="tour">
-  <div class="inner">
-    <p class="rot">Tour 360&deg; oficial</p>
-    <h2>Entre no apartamento agora, sem sair daqui.</h2>
-    <p class="lead">A One publicou o tour em 360&deg; da planta de um dormit&oacute;rio. D&aacute; pra andar pela sala, pela cozinha e sair no terra&ccedil;o, girando a imagem com o dedo. Leva dois minutos e responde mais que qualquer foto.</p>
-
-    <a class="tour-card" href="https://oneinnovation.com.br/tour-virtual/tour_one_nex_jurupis_02/1dor/" target="_blank" rel="noopener">
-      <img src="1707-tour.jpg" width="1440" height="537" loading="lazy" alt="Interior do studio decorado no tour virtual do Nex One Jurupis, com cozinha integrada, sala e terra&ccedil;o ao fundo">
-      <span class="tour-veu"></span>
-      <span class="tour-play"></span>
-      <span class="tour-legenda"><b>Abrir o tour 360&deg;</b>Sala, cozinha, banho e terra&ccedil;o. Material oficial da One Innovation.</span>
-    </a>
-
-    <div class="tour-acoes">
-      <a class="btn btn-lg" href="https://oneinnovation.com.br/tour-virtual/tour_one_nex_jurupis_02/1dor/" target="_blank" rel="noopener">Abrir o tour em 360&deg;</a>
-      <a class="btn" href="https://wa.me/5511927682992?text=Ol%C3%A1!%20Vi%20o%20tour%20do%20studio%201707%20e%20queria%20saber%20a%20condi%C3%A7%C3%A3o%20do%20repasse.">Tirar d&uacute;vida no WhatsApp</a>
+    <h2>A 1707, em fotos reais</h2>
+    <p class="lead">Vistoria de entrega, 23/09/2026. Unidade vazia, do jeito que você recebe.</p>
+    <div class="fotos-grid">
+      <figure class="largo"><a href="1707-real-cozinha.jpg"><img src="1707-real-cozinha-800.jpg" srcset="1707-real-cozinha-800.jpg 800w, 1707-real-cozinha.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Entrada e bancada da cozinha do studio 1707"></a><figcaption><b>Cozinha.</b> Bancada de granito com cuba.</figcaption></figure>
+      <figure class="largo"><a href="1707-real-banheiro.jpg"><img src="1707-real-banheiro-800.jpg" srcset="1707-real-banheiro-800.jpg 800w, 1707-real-banheiro.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="1200" loading="lazy" decoding="async" alt="Banheiro do studio 1707 com bancada e box"></a><figcaption><b>Banheiro.</b> Bancada com cuba e box.</figcaption></figure>
+      <figure><a href="1707-real-box.jpg"><img src="1707-real-box-800.jpg" srcset="1707-real-box-800.jpg 600w, 1707-real-box.jpg 1200w" sizes="(min-width:760px) 25vw, 50vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Vaso e box do banheiro do studio 1707"></a><figcaption><b>Box.</b> Revestimento cerâmico.</figcaption></figure>
+      <figure><a href="1707-real-terraco-unidade.jpg"><img src="1707-real-terraco-unidade-800.jpg" srcset="1707-real-terraco-unidade-800.jpg 600w, 1707-real-terraco-unidade.jpg 1200w" sizes="(min-width:760px) 25vw, 50vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Terraço do studio 1707, voltado para o prédio vizinho"></a><figcaption><b>Terraço da unidade.</b> Dá para o prédio vizinho.</figcaption></figure>
+      <figure><a href="1707-real-fachada.jpg"><img src="1707-real-fachada-800.jpg" srcset="1707-real-fachada-800.jpg 600w, 1707-real-fachada.jpg 1200w" sizes="(min-width:760px) 25vw, 50vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Fachada real da Torre Jurupis do Nex One Jurupis"></a><figcaption><b>Fachada.</b> Torre Jurupis.</figcaption></figure>
+      <figure><a href="1707-real-terraco-condominio.jpg"><img src="1707-real-terraco-condominio-800.jpg" srcset="1707-real-terraco-condominio-800.jpg 600w, 1707-real-terraco-condominio.jpg 1200w" sizes="(min-width:760px) 25vw, 50vw" width="1200" height="1600" loading="lazy" decoding="async" alt="Deck do terraço de uso comum do Nex One Jurupis"></a><figcaption><b>Terraço do condomínio.</b> Área comum, não é da unidade.</figcaption></figure>
     </div>
-
-    <p class="nota">O tour mostra a planta de um dormit&oacute;rio do empreendimento, decorada e mobiliada para exposi&ccedil;&atilde;o. A 1707 &eacute; a planta final 07, studio de 25,71 m&sup2; com terra&ccedil;o coberto, no 17&ordm; e &uacute;ltimo pavimento. Serve para voc&ecirc; sentir o p&eacute; direito, os acabamentos e a propor&ccedil;&atilde;o dos ambientes.</p>
   </div>
 </section>
+
+
 
 <section class="espelho">
   <div class="inner">
@@ -548,50 +528,7 @@
   </div>
 </section>
 
-<section>
-  <div class="inner">
-    <h2>A 1707, em fotos reais</h2>
-    <p class="lead">Fotos tiradas na vistoria de entrega, em 23/09/2026. Unidade vazia, sem mobília, do jeito que você recebe.</p>
-    <div class="galeria-real">
-      <figure><img src="1707-real-sala.jpg" width="1600" height="1200" loading="lazy" alt="Sala do studio 1707 com piso laminado e porta de vidro para o terraço"><figcaption><b>Sala</b>Piso laminado já instalado.</figcaption></figure>
-      <figure><img src="1707-real-cozinha.jpg" width="1600" height="1200" loading="lazy" alt="Entrada e bancada da cozinha do studio 1707"><figcaption><b>Entrada e cozinha</b>Bancada de granito com cuba.</figcaption></figure>
-      <figure><img src="1707-real-banheiro.jpg" width="1600" height="1200" loading="lazy" alt="Banheiro do studio 1707 com bancada e box"><figcaption><b>Banheiro</b>Bancada com cuba e box.</figcaption></figure>
-      <figure><img src="1707-real-box.jpg" width="1200" height="1600" loading="lazy" alt="Vaso e box do banheiro do studio 1707"><figcaption><b>Vaso e box</b>Revestimento cerâmico.</figcaption></figure>
-      <figure><img src="1707-real-terraco-unidade.jpg" width="1200" height="1600" loading="lazy" alt="Vista do terraço do studio 1707, voltada para o prédio vizinho"><figcaption><b>Terraço da unidade</b>Voltado para o prédio vizinho. O argumento aqui é último andar, localização e metrô, não vista.</figcaption></figure>
-      <figure><img src="1707-real-terraco-condominio.jpg" width="1200" height="1600" loading="lazy" alt="Deck do terraço de uso comum do Nex One Jurupis"><figcaption><b>Terraço do condomínio</b>Área comum, não é da unidade.</figcaption></figure>
-      <figure><img src="1707-real-fachada.jpg" width="1200" height="1600" loading="lazy" alt="Fachada real da Torre Jurupis do Nex One Jurupis"><figcaption><b>Fachada</b>Torre Jurupis, na Alameda dos Jurupis.</figcaption></figure>
-    </div>
-  </div>
-</section>
 
-<section>
-  <div class="inner">
-    <h2>O prédio, por dentro</h2>
-    <div class="galeria">
-      <figure>
-        <img src="1707-acesso.jpg" width="1600" height="900" loading="lazy" alt="Acesso residencial da Torre Jurupis, Nex One Jurupis, Moema">
-        <figcaption><b>Acesso residencial</b>Entrada exclusiva da Torre Jurupis, na Alameda Jurupis.</figcaption>
-      </figure>
-      <figure>
-        <img src="1707-skylounge.jpg" width="1600" height="900" loading="lazy" alt="Sky lounge de 215 m² no rooftop do Nex One Jurupis, em Moema">
-        <figcaption><b>Sky lounge, 215 m²</b>No rooftop do 10º pavimento, com churrasqueira e solário.</figcaption>
-      </figure>
-      <figure>
-        <img src="1707-spa.jpg" width="1600" height="900" loading="lazy" alt="Spa com solário e deck molhado do Nex One Jurupis, Moema">
-        <figcaption><b>Spa com solário e deck molhado, 125 m²</b>No mesmo pavimento do rooftop.</figcaption>
-      </figure>
-      <figure>
-        <img src="1707-coworking.jpg" width="1600" height="900" loading="lazy" alt="Coworking do condomínio do Nex One Jurupis, Moema">
-        <figcaption><b>Coworking, 70 m²</b>Com sala de reunião fechada, no 1º pavimento.</figcaption>
-      </figure>
-      <figure>
-        <img src="1707-fitness.jpg" width="1600" height="640" loading="lazy" alt="Academia do condomínio do Nex One Jurupis, Moema">
-        <figcaption><b>Fitness, 105 m²</b>Com apoio externo, além do espaço gourmet de 130 m² e do terraço de 55 m².</figcaption>
-      </figure>
-    </div>
-    <p class="nota">As imagens desta seção são as oficiais da One Innovation e mostram as áreas comuns do empreendimento. As fotos reais da 1707 estão na seção acima.</p>
-  </div>
-</section>
 
 <section>
   <div class="inner">
@@ -639,7 +576,7 @@
         <span class="val">R$ 0</span>
       </div>
       <div class="linha-conta destaque">
-        <span class="rot">Seu custo total<small>unidade livre, sem restrição de renda nem de locação</small></span>
+        <span class="rot">Seu custo total<small>com a taxa de cessão paga pelo vendedor</small></span>
         <span class="val">R$ 499.000</span>
       </div>
       <div class="linha-conta">
@@ -647,7 +584,58 @@
         <span class="val">R$ 767</span>
       </div>
     </div>
-    <p class="nota">O saldo é corrigido pela construtora até a data da assinatura, e é conferido junto com você no extrato oficial antes de qualquer proposta. Bancos financiam até 80% do valor do imóvel, então quem opta por financiamento cobre em recursos próprios a diferença entre esse limite e o saldo. A One também trabalha com financiamento direto e aceita pagamento à vista.</p>
+    <p class="nota">O saldo é corrigido pela construtora até a assinatura. Você confere o valor no extrato oficial antes de qualquer proposta. Bancos financiam até 80% do valor do imóvel, e quem financia cobre a diferença com recursos próprios. A One também tem financiamento direto e aceita pagamento à vista.</p>
+  </div>
+</section>
+
+<section class="tour">
+  <div class="inner">
+    <p class="rot">Tour 360&deg; oficial</p>
+    <h2>Ande pelo decorado em 360&deg;</h2>
+    <p class="lead">Tour oficial da One, com o apartamento decorado. Gire a imagem com o dedo e ande pela sala, cozinha e terra&ccedil;o.</p>
+
+    <a class="tour-card" href="https://oneinnovation.com.br/tour-virtual/tour_one_nex_jurupis_02/1dor/" target="_blank" rel="noopener">
+      <img src="1707-tour.jpg" decoding="async" width="1440" height="537" loading="lazy" alt="Interior do studio decorado no tour virtual do Nex One Jurupis, com cozinha integrada, sala e terra&ccedil;o ao fundo">
+      <span class="tour-veu"></span>
+      <span class="tour-play"></span>
+      <span class="tour-legenda"><b>Abrir o tour 360&deg;</b>Sala, cozinha, banho e terra&ccedil;o. Material oficial da One Innovation.</span>
+    </a>
+
+    <div class="tour-acoes">
+      <a class="btn btn-lg" href="https://oneinnovation.com.br/tour-virtual/tour_one_nex_jurupis_02/1dor/" target="_blank" rel="noopener">Abrir o tour em 360&deg;</a>
+      <a class="btn" href="https://wa.me/5511927682992?text=Ol%C3%A1!%20Vi%20o%20tour%20do%20studio%201707%20e%20queria%20saber%20a%20condi%C3%A7%C3%A3o%20do%20repasse.">Tirar d&uacute;vida no WhatsApp</a>
+    </div>
+
+    <p class="nota">O tour mostra a planta de um dormit&oacute;rio, decorada para exposi&ccedil;&atilde;o. A 1707 &eacute; a planta final 07, studio de 25,71 m&sup2; com terra&ccedil;o coberto. Serve para sentir p&eacute; direito, acabamentos e propor&ccedil;&atilde;o.</p>
+  </div>
+</section>
+
+<section>
+  <div class="inner">
+    <h2>O prédio, por dentro</h2>
+    <div class="galeria">
+      <figure>
+        <img src="1707-acesso-800.jpg" srcset="1707-acesso-800.jpg 800w, 1707-acesso.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Acesso residencial da Torre Jurupis, Nex One Jurupis, Moema">
+        <figcaption><b>Acesso residencial</b>Entrada exclusiva da Torre Jurupis, na Alameda Jurupis.</figcaption>
+      </figure>
+      <figure>
+        <img src="1707-skylounge-800.jpg" srcset="1707-skylounge-800.jpg 800w, 1707-skylounge.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Sky lounge de 215 m² no rooftop do Nex One Jurupis, em Moema">
+        <figcaption><b>Sky lounge, 215 m²</b>No rooftop do 10º pavimento, com churrasqueira e solário.</figcaption>
+      </figure>
+      <figure>
+        <img src="1707-spa-800.jpg" srcset="1707-spa-800.jpg 800w, 1707-spa.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Spa com solário e deck molhado do Nex One Jurupis, Moema">
+        <figcaption><b>Spa com solário e deck molhado, 125 m²</b>No mesmo pavimento do rooftop.</figcaption>
+      </figure>
+      <figure>
+        <img src="1707-coworking-800.jpg" srcset="1707-coworking-800.jpg 800w, 1707-coworking.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="Coworking do condomínio do Nex One Jurupis, Moema">
+        <figcaption><b>Coworking, 70 m²</b>Com sala de reunião fechada, no 1º pavimento.</figcaption>
+      </figure>
+      <figure>
+        <img src="1707-fitness-800.jpg" srcset="1707-fitness-800.jpg 800w, 1707-fitness.jpg 1600w" sizes="(min-width:760px) 430px, 100vw" width="1600" height="640" loading="lazy" decoding="async" alt="Academia do condomínio do Nex One Jurupis, Moema">
+        <figcaption><b>Fitness, 105 m²</b>Com apoio externo, além do espaço gourmet de 130 m² e do terraço de 55 m².</figcaption>
+      </figure>
+    </div>
+    <p class="nota">Imagens oficiais da One Innovation, das áreas comuns. As fotos reais da 1707 estão no começo da página.</p>
   </div>
 </section>
 
@@ -655,9 +643,9 @@
   <div class="inner">
     <h2>O que você pode conferir sozinho</h2>
     <div class="prova">
-      <div class="prova-item">
+      <div class="prova-item" id="hmp">
         <b>O que o memorial de incorporação diz sobre esta unidade</b>
-        <span>O memorial registra, para o 17º pavimento da Torre 1, cinco apartamentos R2v-1 (1701 a 1705) e sete apartamentos HMP (1706 a 1710, 1722 e 1723). A 1707 é uma das HMP, Habitação de Mercado Popular. O contrato assinado traz a faixa de renda familiar do programa e a regra de destinação para quem compra como investimento. Prefiro que você leia isso aqui, antes da visita, e não depois. O documento vai junto com o contrato e o extrato do saldo.</span>
+        <span>No 17º pavimento da Torre 1, o memorial registra sete unidades HMP (1706 a 1710, 1722 e 1723). A 1707 é uma delas. HMP é Habitação de Mercado Popular. Faixa declarada em contrato: renda familiar acima de R$ 7.920 e até R$ 13.200. Quem está fora da faixa pode comprar, destinando a unidade a revenda ou locação para quem se enquadre. O memorial vai junto com o contrato e o extrato do saldo.</span>
         <em>memorial de incorporação, Anexo I do contrato, Torre 1 Jurupis</em>
       </div>
       <div class="prova-item">
@@ -667,17 +655,17 @@
       </div>
       <div class="prova-item">
         <b>O que vem entregue na unidade</b>
-        <span>Piso laminado no estar e dormitório, piso cerâmico no banheiro e no terraço, revestimento cerâmico no box e ponto de força e dreno previstos para o ar-condicionado. Três elevadores atendem a Torre Jurupis do subsolo ao 17º andar.</span>
+        <span>Piso laminado no estar e dormitório. Piso cerâmico no banheiro e no terraço. Revestimento cerâmico no box. Ponto de força e dreno para ar-condicionado. Três elevadores atendem a Torre Jurupis do subsolo ao 17º andar.</span>
         <em>memorial descritivo da One</em>
       </div>
       <div class="prova-item">
         <b>A conta de quem compra para alugar</b>
-        <span>Studio em Moema aluga entre R$ 2.800 e R$ 4.200 por mês. Descontando os R$ 767 de condomínio e IPTU, sobram por volta de R$ 2.030 por mês, o que dá perto de 5% ao ano sobre o custo total da operação. Vacância do bairro entre 4% e 8%, e studio aluga em até 30 dias.</span>
+        <span>Studio em Moema aluga entre R$ 2.800 e R$ 4.200 por mês. Tirando R$ 767 de condomínio e IPTU, sobram por volta de R$ 2.030. Isso dá perto de 5% ao ano sobre o custo total. Vacância do bairro entre 4% e 8%, e studio aluga em até 30 dias.</span>
         <em>faixa praticada no bairro em 2026</em>
       </div>
       <div class="prova-item">
         <b>Condomínio de R$ 600 em prédio com lazer completo</b>
-        <span>São 412 unidades dividindo academia, spa, coworking, espaço gourmet, lavanderia, pet place e terraço. Esse rateio é o que mantém o valor baixo, e compacto em Moema costuma ter condomínio mais alto que isso.</span>
+        <span>São 412 unidades dividindo academia, spa, coworking, espaço gourmet, lavanderia, pet place e terraço. É esse rateio que mantém o valor baixo. Compacto em Moema costuma ter condomínio mais alto.</span>
         <em>valor informado pelo proprietário</em>
       </div>
       <div class="prova-item">
@@ -687,7 +675,7 @@
       </div>
       <div class="prova-item">
         <b>Preço do metro quadrado</b>
-        <span>Moema trabalha entre R$ 14.000 e R$ 18.000 o metro quadrado, e o empreendimento foi lançado acima disso por ser novo e com lazer completo.</span>
+        <span>Moema trabalha entre R$ 14.000 e R$ 18.000 o metro quadrado. O empreendimento foi lançado acima disso, por ser novo e com lazer completo.</span>
         <em>média do bairro em 2026</em>
       </div>
     </div>
@@ -698,9 +686,9 @@
   <div class="inner">
     <h2>Quem responde você</h2>
     <div class="quem">
-      <p>Quem fala com você no WhatsApp sou eu, Pedro Poli, da Technopoli. Eu cuido da divulgação dessa unidade: sou quem organiza os documentos, responde suas perguntas e agenda a visita.</p>
-      <p>A negociação e a assinatura da cessão são feitas com o proprietário e com corretor registrado no CRECI. Eu não intermedeio a venda, e digo isso abertamente porque você tem o direito de saber com quem está falando em cada etapa.</p>
-      <p>Na prática isso é bom pra você: eu tenho tempo pra responder rápido, mandar o documento que você pedir e tirar dúvida no mesmo dia, porque essa é a única unidade que eu estou cuidando.</p>
+      <p>Quem fala com você no WhatsApp sou eu, Pedro Poli, da Technopoli. Eu cuido da divulgação desta unidade: documentos, dúvidas e agenda de visita.</p>
+      <p>A negociação e a assinatura da cessão são feitas com o proprietário e com corretor registrado no CRECI. Eu não intermedeio a venda.</p>
+      <p>Essa é a única unidade que eu estou cuidando. Por isso respondo rápido e mando o documento que você pedir no mesmo dia.</p>
     </div>
   </div>
 </section>
@@ -737,7 +725,8 @@
       <summary>Qual a diferença entre essa unidade e as que a One ainda vende?</summary>
       <div class="corpo">
         <p>A diferença real é a posição: a 1707 está no 17º e último andar, e essa linha não existe mais no plantão. Na categoria, ela é do mesmo tipo das unidades que a incorporadora ainda vende. O memorial de incorporação classifica a 1707 como HMP, Habitação de Mercado Popular.</p>
-        <p>O que isso significa na prática: faixa declarada em contrato, renda familiar acima de R$ 7.920 e até R$ 13.200. Quem está fora da faixa pode comprar, destinando a unidade a revenda ou locação para quem se enquadre. O contrato e o memorial vão para a sua mão antes da visita, com essa parte marcada.</p>
+        <p>Faixa declarada em contrato: renda familiar acima de R$ 7.920 e até R$ 13.200. Quem está fora da faixa pode comprar, destinando a unidade a revenda ou locação para quem se enquadre.</p>
+        <p>O contrato e o memorial vão para a sua mão antes da visita, com essa parte marcada.</p>
       </div>
     </details>
 
@@ -789,13 +778,12 @@
           <li><span>Shopping Ibirapuera</span><b>3 min</b></li>
           <li><span>Aeroporto de Congonhas</span><b>6 min de carro</b></li>
           <li><span>Bourbon Street Music Club</span><b>2 min</b></li>
-          <li><span>Parque Ibirapuera</span><b>o lado para onde a unidade é voltada</b></li>
         </ul>
         <a class="link-mapa" href="https://www.google.com/maps/search/?api=1&amp;query=Alameda+dos+Jurupis+1817+Moema+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir o endereço no Google Maps</a>
       </div>
       <div>
         <p class="nota" style="margin-top:0">Alameda dos Jurupis, 1817, Moema, São Paulo. O prédio fica no trecho entre a Avenida Ibirapuera e a Alameda dos Arapanés, na parte de Moema conhecida como Moema Índios.</p>
-        <p class="nota">A unidade fica no 17º andar, com o terraço voltado para o prédio vizinho. A vistoria de entrega foi feita em 23/09/2026, e a visita é combinada por WhatsApp, com agendamento.</p>
+        <p class="nota">O terraço da unidade é voltado para o prédio vizinho. A vistoria de entrega foi em 23/09/2026. Visita com agendamento, pelo WhatsApp.</p>
       </div>
     </div>
   </div>
